@@ -23,17 +23,7 @@ Thanks to the never-ending pandemic, sourcing suitable and reasonably priced par
 - Upload the program to Arduino.
 
 ## Prototype Demo
-
-
-
-
-
-<iframe src="https://onedrive.live.com/embed?cid=F2989B4C353D08C4&resid=F2989B4C353D08C4%21737649&authkey=AI5x4_9i_oGFaPQ" width="320" height="181" frameborder="0" scrolling="no" allowfullscreen></iframe>
-
-
-
-
-
+Video: https://1drv.ms/v/s!AsQIPTVMm5jyrYJxPdakP_ZY_XlX1w
 
 Before the first boot, make sure the probe wires (orange wires above) are properly connected, then boot the Arduino up by plugging in power. The LCD screen should be showing "System normal." after a few seconds.
 
