@@ -64,7 +64,10 @@ Thanks to the never-ending pandemic, sourcing suitable and reasonably priced par
     The `probePinouts` and the `probePinsDescription` array have the same length and one-to-one correspondence. For example, `probePinouts[0] = 5` and `probePinsDescription[0] = "Seat"` means the probe wire for the bike seat is assigned to pin 5. The alarm will be activated once it's been removed from the bike. 
 
 - Assemble the board with an LCD screen, buzzer, reinitiate button, and probe wires.
-    ![](img/Breadboard.png)
+    ![](img/Breadboard.jpg)
+
+    Or if you put it on a real bike, it will roughly be like this:
+    ![](img/mockup.jpg)
 
 - Upload the program to Arduino.
 
