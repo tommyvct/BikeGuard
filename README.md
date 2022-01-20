@@ -95,4 +95,6 @@ I asked the police where did the stolen bikes go, they said they are sold in bla
 
 Ultimately, this is a human and society problem, a big problem that technology cannot solve and a big problem that everyone should take their part to solve. It isn't a one-off psycho trying to be exciting about committing petty crime, but a soul ruined by drugs ruining other's life.
 
-Theft and vandalism on bikes are no different from theft and vandalism on vehicles or properties. But what's different is vehicles and properties have insurance as a financial backup when such incident happens, while bike don't. If a bike alarm system like this can be more useful, an insurance plan would be necessary.
+Theft and vandalism on bikes are no different from theft and vandalism on vehicles or properties. But what's different is vehicles and properties have insurance as a financial backup when such incident happens, while bike don't. If a bike alarm system like this wants to be successful on the market, a bundled insurance plan would be necessary. 
+
+It is also important that there should be more guarded bike shelters around the city so cyclists can stop worrying about their bikes got stolen all the time when they need to leave their bikes temporarily.
