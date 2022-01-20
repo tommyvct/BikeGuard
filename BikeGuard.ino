@@ -36,12 +36,13 @@ String probePinsDescription[8] =
 /////////////////////////////////////////
 
 
-volatile uint8_t state;  // NVRAM Data, one bit represents one probe
-unsigned long probePinsTimeout[8] = {};
+volatile uint8_t state;  // state of alarm, one bit represents one probe
+unsigned long probePinsTimeout[8] = {};  // 
 LiquidCrystal_I2C lcd(0x27, 20, 4);  // I2C 20x4 LCD
 bool lcdContentChanged = true;
 inline void refreshDisplay() { lcd.clear(); lcd.setCursor(0, 0); }
 unsigned long previousMillis = 0;
+inline unsigned long realMillis() { return previousMillis + millis(); }
 
 
 void setup()
@@ -258,5 +259,3 @@ template <class T> int EEPROM_readAnything(int ee, T& value)
 	  *p++ = EEPROM.read(ee++);
     return i;
 }
-
-inline unsigned long realMillis() { return previousMillis + millis(); }
