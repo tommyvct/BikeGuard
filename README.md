@@ -88,8 +88,17 @@ Try pulling the power of the Arduino board, obviously the alarm should stop beca
 
 To completely "reset" the prototype, hold the reinitialization switch, then press the reset button on the Arduino board. Release the reinitialization switch once "System Normal" is displayed on the LCD.
 
+## Testing
+The program went through several improvements, from being able to remember the state of alarm before power loss, to being able to display the time when and which part of the bike has been stolen.
+
+The program was fairly simple. However, the LCD screen I used wasn't so cooperating. The I2C LCD library I used have a function called `println()`, and I used it just like any other `println()` function in C# or Java. But it didn't put the cursor into the next line, instead it printed 2 garbage characters that suppose to be CRLF. I digged into the source code of the library and found out the `println()` function was simple `print()` with CRLF in the end. And the LCD screen doesn't understand CRLF, so it printed 2 garbage characters. 
+
+I also tried quite a few ways to implements how to display things in a good format, and avoid refreshing content with the same content, I ended up using another state indicator that indicates does the screen needs to be refreshed. 
+
+The LCD screen also has a strange behaviour when something longer than it's column is passed in. I did quite a lot experiment, and ended up using the first row to display the part name, second row to indicate the stolen state, and the third row to display time.
+
+
 ## Personal Refelctions
-<!-- TODO: probably still doesn't solve the vandalism problem, there are always problems that technologies cannot solve, maybe insurance can help financially, more bike shelters, better security, etc -->
 I love cycling and I love my bike. I can still remember how hard I cried at the night which my bike got stolen. It's the same feeling that if my brother got kidnapped and the police won't help.
 
 After finishing this prototype, I found that no alarm system can completely stop theft and vandalism. The system will have no idea if the criminal cut most of the spoke on the wheel, and the system can be easily destroyed by applying an arbitrarily high voltage on any probe wire. It is also possible that the box holding the board could be destroyed altogether. Surely we can improve it by running more probe wires around everywhere in the bike, making more durable boxes. But just like a property or a vehicle can be victims from time to time, no security system is perfect and invincible either. 
